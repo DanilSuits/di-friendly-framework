@@ -11,7 +11,7 @@ import com.vocumsineratio.kata.framework.test.BowlingSpecification;
 /**
  * @author Danil Suits (danil@vast.com)
  */
-public class CustomTest extends BowlingSpecification {
+public final class CustomTest extends BowlingSpecification {
     public CustomTest() {
         super(CustomBowling.class);
     }

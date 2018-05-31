@@ -5,7 +5,6 @@
  */
 package com.vocumsineratio.kata.custom;
 
-import com.vocumsineratio.kata.framework.api.BowlingGame;
 import com.vocumsineratio.kata.framework.api.Bowling;
 
 /**
