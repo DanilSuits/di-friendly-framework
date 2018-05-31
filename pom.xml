@@ -7,10 +7,16 @@
     <groupId>com.vocumsineratio.kata</groupId>
     <artifactId>di-friendly-framework</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>di-friendly-framework</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+
+    <modules>
+        <module>di-friendly-framework-api</module>
+        <module>di-friendly-framework-custom</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,9 +27,22 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.vocumsineratio.kata</groupId>
+                <artifactId>di-friendly-framework-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>          
+                <groupId>com.vocumsineratio.kata</groupId>
+                <artifactId>di-friendly-framework-api</artifactId>
+                <version>${project.version}</version>
+                <classifier>tests</classifier>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
                 <version>5.2.0</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
